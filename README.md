@@ -18,6 +18,7 @@ Step3:
 - Optimization algorithms.
 - Regularization.
 - Normalization.
+- Initialization
 - Convolutional networks.
 - Data augmentation.
 - Sequence Modeling.
