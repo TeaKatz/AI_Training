@@ -1,4 +1,4 @@
-﻿# AI Training
+# AI Training
 Step1:
 ### Python programming
 - Setup and prepare environment.
@@ -8,8 +8,11 @@ Step1:
 
 Step2:
 ### Basic Machine learning
-- Linear regression
-- Logistic regression
+- K-Nearest Neighbor
+- Linear Regression
+- Logistic Regression
+- Decision Tree
+- Random Forest
 
 Step3:
 ### Deep learning
