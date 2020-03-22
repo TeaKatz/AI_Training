@@ -28,7 +28,7 @@ class SignalGenerator:
 		elif self.signal_type == "cos":
 			y = np.cos(2 * np.pi * x) * self.amplitude + self.vertical_shift
 		elif self.signal_type == "half-sine":
-			y = np.sin(2 * np.pi * (x - 0.5) / 2) * self.amplitude + self.vertical_shift
+			y = np.sin(2 * np.pi * (x / 2 - 0.25)) * self.amplitude + self.vertical_shift
 		elif self.signal_type == "half-cos":
 			y = np.cos(2 * np.pi * x / 2) * self.amplitude + self.vertical_shift
 		else:

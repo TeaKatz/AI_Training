@@ -1,4 +1,4 @@
-class OneHotEncoder:
+class LabelEncoder:
 	def __init__(self):
 		self.classes = None
 	
@@ -12,10 +12,10 @@ class OneHotEncoder:
 		"""
 		x is Series of shape (batch_size, )
 		"""
-		encoded = np.zeros([len(x), len(self.classes)])
+		encoded = np.zeros_like(x)
 		for i, _class in enumerate(self.classes):
 			match_indices = np.where(x == _class)[0]
-			encoded[match_indices, i] = 1
+			encoded[match_indices] = i
 		return encoded
 	
 	def fit_transform(self, x):
